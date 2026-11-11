@@ -1,0 +1,21 @@
+kalimat, intent
+halo bot kos, salam_identitas
+bisa tolong jawab apa aja, salam_identitas
+uang sewa bulanan ditransfer ke bank apa, info_pembayaran
+batas paling lambat bayar kos tanggal berapa, info_pembayaran
+air di kamar mandi tiba-tiba mati, lapor_listrik_air
+token listrik kamar 10 habis bunyinya berisik, lapor_listrik_air
+tolong ac nya ga dingin sama sekali, lapor_kerusakan_kamar
+kunci pintu kamar saya patah nih, lapor_kerusakan_kamar
+minta password wifi yang baru dong, info_wifi
+kenapa internet wifi nya lemot banget hari ini, info_wifi
+kalo pulang jam 12 malem masih bisa masuk ga, aturan_jam_malam
+gerbang depan biasanya dikunci jam berapa ya, aturan_jam_malam
+temen kampus cowok mau numpang ngerjain tugas di kamar boleh?, aturan_tamu
+bawa saudara nginep sehari aturannya gimana, aturan_tamu
+tempat buat jemur baju letaknya di lantai berapa, fasilitas_umum
+di kos ini nyediain mesin cuci ga buat anak kos, fasilitas_umum
+kalo tempat sampah kamar penuh dibuangin penjaga ga, layanan_kebersihan
+kalau misal bulan depan mau keluar dari kos gimana caranya, info_berhenti_kos
+uang deposit jaminan itu nanti dikembalikan ga, info_berhenti_kos
+tolong cariin jadwal tayang film marvel terbaru dong, fallback

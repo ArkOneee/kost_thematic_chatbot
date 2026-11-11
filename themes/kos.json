@@ -1,0 +1,155 @@
+{
+  "id": "kos",
+  "bot_name": "KosBot",
+  "fallback": [
+    "Maaf, saya hanya bisa menjawab pertanyaan seputar layanan kos (fasilitas, bayar kos, lapor rusak, tamu, WiFi)."
+  ],
+  "intents": [
+    {
+      "tag": "salam_identitas",
+      "patterns": [
+        "halo",
+        "selamat pagi/siang/malam",
+        "kamu siapa",
+        "bot apa ini",
+        "bisa bantu apa"
+      ],
+      "responses": [
+        "Halo! Saya KosBot. Ada yang bisa dibantu terkait info sewa, fasilitas, atau pelaporan masalah kos?",
+        "Hai! Saya asisten virtual kos ini. Tanyakan saja soal WiFi, pembayaran, atau lapor kerusakan."
+      ]
+    },  
+    {
+      "tag": "info_pembayaran",
+      "patterns": [
+        "cara bayar kos",
+        "bayar kos kemana",
+        "jatuh tempo pembayaran",
+        "nomor rekening ibu kos",
+        "batas akhir bayar kos"
+      ],
+      "responses": [
+        "Pembayaran kos ditransfer ke BCA 1234567890 a.n. Ibu Pemilik Kos. Harap bayar maksimal tanggal 5 setiap bulannya dan kirim bukti transfer ke WhatsApp ibu kos."
+      ]
+    },
+    {
+      "tag": "lapor_listrik_air",
+      "patterns": [
+        "listrik mati",
+        "token listrik habis",
+        "air mati",
+        "pompa air rusak",
+        "kenapa ga ada air"
+      ],
+      "responses": [
+        "Mohon maaf atas ketidaknyamanannya. Untuk token listrik kamar, silakan diisi mandiri. Jika listrik utama/air mati, laporan ini telah dicatat dan penjaga kos akan segera mengeceknya."
+      ]
+    },
+    {
+      "tag": "lapor_kerusakan_kamar",
+      "patterns": [
+        "AC bocor",
+        "AC kurang dingin",
+        "AC mati",
+        "AC rusak",
+        "kunci pintu rusak",
+        "lampu kamar mati",
+        "kran air bocor"
+      ],
+      "responses": [
+        "Laporan kerusakan telah diterima. Teknisi akan mengecek kamar Anda antara pukul 13.00-17.00. Mohon pastikan ada orang di kamar atau titipkan kunci pada penjaga."
+      ]
+    },
+    {
+      "tag": "info_wifi",
+      "patterns": [
+        "password wifi apa",
+        "nama wifi kos",
+        "wifi mati",
+        "internet lemot",
+        "cara konek wifi"
+      ],
+      "responses": [
+        "Nama WiFi: KosNyaman_5G, Password: [Tanyakan ke penjaga kos]. Jika koneksi lambat, coba matikan dan nyalakan ulang perangkat Anda. Jika masih mati total, pengelola akan menghubungi penyedia internet."
+      ]
+    },
+    {
+      "tag": "aturan_jam_malam",
+      "patterns": [
+        "jam malam",
+        "batas pulang jam berapa",
+        "gerbang dikunci jam",
+        "kunci gerbang",
+        "kalo pulang telat gimana"
+      ],
+      "responses": [
+        "Gerbang utama akan dikunci pada pukul 23.00 WIB demi keamanan bersama. Jika Anda pulang di atas jam tersebut (misal karena kerja/kuliah malam), harap kabari penjaga kos sebelumnya."
+      ]
+    },
+    {
+      "tag": "aturan_tamu",
+      "patterns": [
+        "boleh bawa teman",
+        "tamu nginep boleh gak",
+        "aturan kunjungan",
+        "izin bawa pacar",
+        "batas jam tamu"
+      ],
+      "responses": [
+        "Tamu diperbolehkan berkunjung hingga pukul 21.30 WIB di ruang tamu depan. Tamu berlainan jenis kelamin DILARANG masuk ke dalam kamar. Tamu keluarga yang menginap wajib lapor KTP ke penjaga."
+      ]
+    },
+    {
+      "tag": "fasilitas_umum",
+      "patterns": [
+        "fasilitas kos apa aja",
+        "ada dapur umum",
+        "tempat jemuran dimana",
+        "parkiran motor",
+        "mesin cuci"
+      ],
+      "responses": [
+        "Fasilitas umum meliputi: Dapur komunal (ada kulkas & kompor), mesin cuci (jam pakai 06.00-20.00), jemuran di atap lantai 3, dan parkir khusus motor di garasi bawah."
+      ]
+    },
+    {
+      "tag": "layanan_kebersihan",
+      "patterns": [
+        "jadwal buang sampah",
+        "yang bersihin kamar siapa",
+        "sapu lantai dimana",
+        "tempat sampah penuh"
+      ],
+      "responses": [
+        "Kebersihan koridor dan pembuangan sampah utama dilakukan setiap jam 08.00 pagi oleh penjaga. Kebersihan dalam kamar menjadi tanggung jawab masing-masing penghuni. Alat kebersihan tersedia di dekat tangga."
+      ]
+    },
+    {
+      "tag": "info_berhenti_kos",
+      "patterns": [
+        "cara pindah kos",
+        "syarat berhenti sewa",
+        "kalau mau pindah",
+        "gimana cara berhenti sewa",
+        "mau berhenti sewa",
+        "ambil uang jaminan deposit"
+      ],
+      "responses": [
+        "Jika ingin berhenti menyewa, mohon beri tahu pengelola maksimal 1 bulan sebelumnya. Uang deposit akan dikembalikan utuh pada hari kepindahan, asalkan kamar bersih dan tidak ada properti yang rusak."
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "makasih",
+        "terima kasih",
+        "oke mantap",
+        "baik"
+      ],
+      "responses": [
+        "Sama-sama! Jangan ragu menghubungi saya lagi jika ada kendala di kos.",
+        "Terima kasih kembali! Semoga harimu menyenangkan."
+      ]
+    }
+  ]
+}
